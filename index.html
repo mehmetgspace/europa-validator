@@ -13,6 +13,35 @@
   <body>
     <h1>europa-validator</h1>
 
+    <div class="europa-validator-container">
+      <form id="europaValidatorForm">
+
+        <!-- Name -->
+        <div class="europa-validator-group">
+          <label for="name" class="europa-validator-group__label">Name</label>
+          <input type="text" id="name" class="europa-validator-input" placeholder="Your name">
+          <div class="europa-validator-group__message">Error</div>
+        </div>
+
+        <!-- Email -->
+        <div class="europa-validator-group">
+          <label for="email" class="europa-validator-group__label">Email</label>
+          <input type="text" id="email" class="europa-validator-input" placeholder="Your email">
+          <div class="europa-validator-group__message">Error</div>
+        </div>
+
+        <!-- Password -->
+        <div class="europa-validator-group">
+          <label for="password" class="europa-validator-group__label">Password</label>
+          <input type="password" id="password" class="europa-validator-input" placeholder="Your password">
+          <div class="europa-validator-group__message">Error</div>
+        </div>
+
+        <button type="submit" class="europa-validator-button europa-validator-button--primary">Submit</button>
+
+      </form>
+    </div>
+
     <script src="js/controllers/europa-validator.js"></script>
   </body>
 </html>

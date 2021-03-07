@@ -1,0 +1,31 @@
+.europa-validator-group {
+  position: relative;
+  margin-bottom: 30px;
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__message {
+    color: $color-orange;
+    font-size: 13px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden;
+  }
+
+  &__message--error {
+    visibility: visible;
+  }
+
+  &--error .europa-validator-input {
+    border-color: $color-orange;
+  }
+
+  &--error &__message {
+    visibility: visible;
+  }
+
+}

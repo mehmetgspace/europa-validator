@@ -1,7 +1,54 @@
-html, body, div, ul, li, h1, p, a {
+html, body, div {
   margin: 0;
   padding: 0; }
+
+* {
+  box-sizing: border-box; }
 
 body {
   font-family: "JetBrains Mono", monospace;
   padding: 30px; }
+
+input,
+button {
+  font-family: "JetBrains Mono", monospace; }
+
+.europa-validator-container {
+  max-width: 500px; }
+
+.europa-validator-group {
+  position: relative;
+  margin-bottom: 30px; }
+  .europa-validator-group__label {
+    display: block;
+    margin-bottom: 10px; }
+  .europa-validator-group__message {
+    color: #EE5A24;
+    font-size: 13px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    visibility: hidden; }
+  .europa-validator-group__message--error {
+    visibility: visible; }
+  .europa-validator-group--error .europa-validator-input {
+    border-color: #EE5A24; }
+  .europa-validator-group--error .europa-validator-group__message {
+    visibility: visible; }
+
+.europa-validator-input {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 100%; }
+  .europa-validator-input:focus {
+    outline: 0; }
+
+.europa-validator-button {
+  cursor: pointer; }
+  .europa-validator-button--primary {
+    background-color: #0652DD;
+    color: #FFFFFF;
+    border: 0;
+    padding: 10px; }

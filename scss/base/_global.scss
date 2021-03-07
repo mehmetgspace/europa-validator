@@ -1,4 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $default-font;
   padding: 30px;
+}
+
+input,
+button {
+  font-family: $default-font;
 }
